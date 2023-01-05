@@ -12,7 +12,7 @@ export const Home: React.FC = () => {
         <DrawerMenu />
         <Search />
       </Box>
-      <Text bold fontSize='4xl' marginY='55'>
+      <Text bold fontSize='2xl' marginY='12'>
         Order online{'\n'}collect in store
       </Text>
       <TabViewComp />

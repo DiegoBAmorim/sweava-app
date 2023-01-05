@@ -13,12 +13,18 @@ const Products: React.FC<Props> = ({ data }) => {
     <Box flex='1'>
       <Box
         marginRight='34'
-        w='220'
-        h='270px'
+        w='64'
+        h='70%'
         rounded='lg'
         position='relative'
         marginTop='20'
         bg='white'
+        style={{
+          shadowColor: 'rgba(57, 57, 57, 0.1)',
+          shadowOffset: { width: 10, height: 10 },
+          shadowOpacity: 0.5,
+          shadowRadius: 2,
+        }}
       >
         <Center position='absolute' top='-50' left='0' right='0'>
           <AspectRatio
@@ -28,7 +34,10 @@ const Products: React.FC<Props> = ({ data }) => {
             }}
             height={{
               base: 150,
-              md: 200,
+              sm: 480,
+              md: 768,
+              lg: 992,
+              xl: 1280,
             }}
           >
             <Image
@@ -45,12 +54,17 @@ const Products: React.FC<Props> = ({ data }) => {
           alignItems='center'
           justifyContent='center'
           flex='1'
-          marginTop='50'
+          marginTop='100'
         >
           <Text fontSize='20'>Apple Watch</Text>
           <Text color='#868686'>Series 6 Red</Text>
         </Box>
-        <Text alignSelf='center' marginBottom='5'>
+        <Text
+          alignSelf='center'
+          marginBottom='5'
+          style={{ color: '#5956E9' }}
+          fontSize='17'
+        >
           $ 359
         </Text>
       </Box>

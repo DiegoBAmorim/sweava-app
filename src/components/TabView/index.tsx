@@ -44,21 +44,39 @@ const FirstRoute = () => (
 );
 
 const SecondRoute = () => (
-  <Center flex={1} my='4'>
-    This is Tab 2
-  </Center>
+  <Box flex='1'>
+    <FlatList
+      data={data}
+      renderItem={({ item }) => <Products data={item} />}
+      keyExtractor={(item) => item.key}
+      horizontal
+      showsHorizontalScrollIndicator={false}
+    />
+  </Box>
 );
 
 const ThirdRoute = () => (
-  <Center flex={1} my='4'>
-    This is Tab 3
-  </Center>
+  <Box flex='1'>
+    <FlatList
+      data={data}
+      renderItem={({ item }) => <Products data={item} />}
+      keyExtractor={(item) => item.key}
+      horizontal
+      showsHorizontalScrollIndicator={false}
+    />
+  </Box>
 );
 
 const FourthRoute = () => (
-  <Center flex={1} my='4'>
-    This is Tab 4{' '}
-  </Center>
+  <Box flex='1'>
+    <FlatList
+      data={data}
+      renderItem={({ item }) => <Products data={item} />}
+      keyExtractor={(item) => item.key}
+      horizontal
+      showsHorizontalScrollIndicator={false}
+    />
+  </Box>
 );
 
 const initialLayout = {
